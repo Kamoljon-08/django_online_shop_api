@@ -5,27 +5,27 @@ from .permissions import IsAuthorOrReadOnly
 from django.contrib.auth import get_user_model
 from rest_framework.viewsets import ModelViewSet
 
-class SponsorListView (ListView):
+class SponsorListViewSet (ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
     queryset = SponsorModel.objects.all()
     serializer_class = SponsorSerializer
 
-class SponsorCreateView (CreateView):
+class SponsorCreateViewSet (ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
     queryset = SponsorModel.objects.all()
     serializer_class = SponsorSerializer
 
-class SponsorDetailView (DetailView):
+class SponsorDetailViewSet (ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
     queryset = SponsorModel.objects.all()
     serializer_class = SponsorSerializer
 
-class SponsorUpdateView (UpdateView):
+class SponsorUpdateViewSet (ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
     queryset = SponsorModel.objects.all()
     serializer_class = SponsorSerializer
 
-class SponsorDeleteView (DeleteView):
+class SponsorDeleteViewSet (ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
     queryset = SponsorModel.objects.all()
     serializer_class = SponsorSerializer

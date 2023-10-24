@@ -22,12 +22,12 @@ from drf_yasg import openapi
 
 schema_view = get_schema_view(
     openapi.Info(
-        title='Users Api',
-        description='Oddiy user project APIsi',
+        title='Online Shop Api',
+        description='Online Shop APIsi',
         default_version='v1',
         terms_of_service='http://www.google.com/policcies/terms/',
         contact=openapi.Contact(email='axmatovkamoljon08@gmail.com'),
-        license=openapi.License(name='Users project litsenziyasi'),       
+        license=openapi.License(name='Online Shop litsenziyasi'),       
     ),
     public=True,
     permission_classes=(permissions.AllowAny,),
@@ -37,6 +37,16 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/', include('users.urls')),
     path('about/', include('about.urls')),
+    path('ad/', include('ad.urls')),
+    path('faq/', include('faq.urls')),
+    path('blog/', include('blog.urls')),
+    path('brand/', include('brand.urls')),
+    path('sponsor/', include('sponsor.urls')),
+    path('product/', include('product.urls')),
+    path('category/', include('category.urls')),
+    path('basket/', include('basket.urls')),
+    path('notification/', include('notification.urls')),
+    path('order/', include('order.urls')),
     path('api-auth/', include('rest_framework.urls')),
     path('api/v1/dj-rest-auth/', include('dj_rest_auth.urls')),
     path('api/v1/dj-rest-auth/registration/', include('dj_rest_auth.registration.urls')),
@@ -46,21 +56,3 @@ urlpatterns = [
     path('redoc/', schema_view.with_ui(
         'redoc', cache_timeout=0), name='schema-redoc'),
 ]
-
-# urlpatterns = [
-#     path('admin/', admin.site.urls),
-#     path('admin_panel/', PageView.as_view(), name='admin_panel'),
-
-#     path('ad/', include('ad.urls')),
-#     path('faq/', include('faq.urls')),
-#     path('blog/', include('blog.urls')),
-#     path('user/', include('users.urls')),
-#     path('about/', include('about.urls')),
-#     path('brand/', include('brand.urls')),
-#     path('sponsor/', include('sponsor.urls')),
-#     path('product/', include('product.urls')),
-#     path('category/', include('category.urls')),
-#     path('basket/', include('basket.urls')),
-#     path('notification/', include('notification.urls')),
-#     path('order/', include('order.urls')),
-# ] 

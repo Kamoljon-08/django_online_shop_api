@@ -1,7 +1,7 @@
 from rest_framework.routers import SimpleRouter
 from .views import (
     UserBlogListViewSet,
-    UserBlogListViewSet,
+    UserBlogDetailViewSet,
 
     BlogListViewSet, 
     BlogCreateViewSet, 

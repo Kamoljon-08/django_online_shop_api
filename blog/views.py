@@ -15,60 +15,60 @@ class UserBlogDetailViewSet (ModelViewSet):
 
 class BlogListViewSet (ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
-    queryset = BasketModel.objects.all()
+    queryset = BlogModel.objects.all()
     serializer_class = BlogSerializer
 
 class BlogCreateViewSet (ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
-    queryset = BasketModel.objects.all()
+    queryset = BlogModel.objects.all()
     serializer_class = BlogSerializer
 
 class BlogDetailViewSet (ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
-    queryset = BasketModel.objects.all()
+    queryset = BlogModel.objects.all()
     serializer_class = BlogSerializer
 
 class BlogUpdateViewSet (ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
-    queryset = BasketModel.objects.all()
+    queryset = BlogModel.objects.all()
     serializer_class = BlogSerializer
 
 class BlogDeleteViewSet (ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
-    queryset = BasketModel.objects.all()
+    queryset = BlogModel.objects.all()
     serializer_class = BlogSerializer
 
 class BlogImageCreateViewSet (ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
-    queryset = BasketModel.objects.all()
+    queryset = BlogImageModel.objects.all()
     serializer_class = BlogImageSerializer
 
 class BlogImageDetailViewSet (ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
-    queryset = BasketModel.objects.all()
+    queryset = BlogImageModel.objects.all()
     serializer_class = BlogImageSerializer
 
 class BlogImageUpdateViewSet (ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
-    queryset = BasketModel.objects.all()
+    queryset = BlogImageModel.objects.all()
     serializer_class = BlogImageSerializer
 
 class BlogImageDeleteViewSet (ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
-    queryset = BasketModel.objects.all()
+    queryset = BlogImageModel.objects.all()
     serializer_class = BlogImageSerializer
 
 class BlogCommentCreateViewSet (ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
-    queryset = BasketModel.objects.all()
+    queryset = BlogCommentModel.objects.all()
     serializer_class = BlogCommentSerializer
 
 class BlogCommentUpdateViewSet (ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
-    queryset = BasketModel.objects.all()
+    queryset = BlogCommentModel.objects.all()
     serializer_class = BlogCommentSerializer
 
 class BlogCommentDeleteViewSet (ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
-    queryset = BasketModel.objects.all()
+    queryset = BlogCommentModel.objects.all()
     serializer_class = BlogCommentSerializer
